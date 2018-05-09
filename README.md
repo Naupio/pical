@@ -1,5 +1,5 @@
-# np_compute  
-(Work In Process) **np_compute** is a general distributed computation system with **Erlang** language base on DAG model. This project is inspired by [DouBan 's DPark](https://github.com/douban/dpark) and [Apache Spark](https://github.com/apache/spark).  
+# npdata  
+(Work In Process) **npdata** is a general distributed computation system with **Erlang** language base on DAG model. This project is inspired by [DouBan 's DPark](https://github.com/douban/dpark) and [Apache Spark](https://github.com/apache/spark).  
 
 # LICENSE
 - The [MIT License](./LICENSE)  
