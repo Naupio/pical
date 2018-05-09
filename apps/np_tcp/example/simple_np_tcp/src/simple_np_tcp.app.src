@@ -1,0 +1,16 @@
+{application, simple_np_tcp,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, { simple_np_tcp_app, []}},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, ["MIT"]},
+  {links, []}
+ ]}.

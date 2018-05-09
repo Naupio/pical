@@ -1,0 +1,2 @@
+-module(np_tcp_ws_protocol).
+-author("Naupio Z.Y. Huang").

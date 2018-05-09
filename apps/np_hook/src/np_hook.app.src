@@ -1,0 +1,16 @@
+{application, np_hook,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, { np_hook_app, []}},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, ['np_hook','np_hook_app','np_hook_sup','np_hook_test']},
+
+  {maintainers, []},
+  {licenses, ["MIT"]},
+  {links, []}
+ ]}.

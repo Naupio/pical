@@ -1,0 +1,18 @@
+{application, npdata,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, { npdata_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    np_hook,
+    np_tcp
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
