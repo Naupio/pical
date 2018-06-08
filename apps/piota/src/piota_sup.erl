@@ -1,10 +1,9 @@
 %%%-------------------------------------------------------------------
-%% @doc np_tcp top level supervisor.
+%% @doc piota top level supervisor.
 %% @end
 %%%-------------------------------------------------------------------
 
--module(np_tcp_sup).
--author("Naupio Z.Y. Huang").
+-module(piota_sup).
 
 -behaviour(supervisor).
 
@@ -29,20 +28,7 @@ start_link() ->
 
 %% Child :: {Id,StartFunc,Restart,Shutdown,Type,Modules}
 init([]) ->
-    SupFlags = #{
-                strategy => rest_for_one,
-                intensity => 10,
-                period => 1
-                    },
-    ChildSpec = [#{
-                    id => np_tcp_server,
-                    start => {np_tcp_server,start_link,[]},
-                    restart => permanent,
-                    shutdown => 30*1000,
-                    type => worker,
-                    modules => [np_tcp_server]
-                }],
-    {ok, { SupFlags, ChildSpec} }.
+    {ok, { {one_for_all, 0, 1}, []} }.
 
 %%====================================================================
 %% Internal functions

@@ -1,6 +1,6 @@
--sname npdata
+-sname piota
 
--setcookie npdata_cookie
+-setcookie piota_cookie
 
 +K true
 +A30

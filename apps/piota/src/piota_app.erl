@@ -1,10 +1,9 @@
 %%%-------------------------------------------------------------------
-%% @doc np_tcp public API
+%% @doc piota public API
 %% @end
 %%%-------------------------------------------------------------------
 
--module(np_tcp_app).
--author("Naupio Z.Y. Huang").
+-module(piota_app).
 
 -behaviour(application).
 
@@ -16,7 +15,7 @@
 %%====================================================================
 
 start(_StartType, _StartArgs) ->
-    np_tcp_sup:start_link().
+    piota_sup:start_link().
 
 %%--------------------------------------------------------------------
 stop(_State) ->
