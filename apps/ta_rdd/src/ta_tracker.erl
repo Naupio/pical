@@ -1,4 +1,4 @@
--module (dag_tracker).
+-module (ta_tracker).
 -compile(export_all).
 
 map_output_tracker() ->

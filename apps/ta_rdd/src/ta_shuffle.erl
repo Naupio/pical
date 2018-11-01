@@ -1,4 +1,4 @@
--module (dag_shuffle).
+-module (ta_shuffle).
 -compile(export_all).
 
 init_need() ->

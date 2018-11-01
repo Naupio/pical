@@ -1,4 +1,4 @@
--module (dag_aggregator).
+-module (ta_aggregator).
 -compile(export_all).
 
 add_aggregator(createCombiner, Ele) ->

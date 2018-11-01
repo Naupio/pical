@@ -1,1 +1,0 @@
--define(HOOK_SVR, np_hook).

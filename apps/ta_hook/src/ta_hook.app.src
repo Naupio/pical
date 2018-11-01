@@ -1,7 +1,8 @@
-{application, np_rdd,
- [{description, "An OTP library"},
+{application, ta_hook,
+ [{description, "An OTP application"},
   {vsn, "0.1.0"},
   {registered, []},
+  {mod, { ta_hook_app, []}},
   {applications,
    [kernel,
     stdlib
@@ -10,6 +11,6 @@
   {modules, []},
 
   {maintainers, []},
-  {licenses, ["Apache 2.0"]},
+  {licenses, ["MIT"]},
   {links, []}
  ]}.

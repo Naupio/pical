@@ -1,4 +1,4 @@
--module (dag_task).
+-module (ta_task).
 -compile(export_all).
 
 result_task(StageID, RDD, Func, Partition) ->

@@ -1,0 +1,1 @@
+-define(HOOK_SVR, ta_hook).

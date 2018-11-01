@@ -1,9 +1,9 @@
 %%%-------------------------------------------------------------------
-%% @doc np_hook public API
+%% @doc ta_hook public API
 %% @end
 %%%-------------------------------------------------------------------
 
--module(np_hook_app).
+-module(ta_hook_app).
 
 -behaviour(application).
 
@@ -15,8 +15,7 @@
 %%====================================================================
 
 start(_StartType, _StartArgs) ->
-    np_hook:start(),
-    np_hook_sup:start_link().
+    ta_hook_sup:start_link().
 
 %%--------------------------------------------------------------------
 stop(_State) ->

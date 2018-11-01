@@ -1,4 +1,4 @@
--module (dag_partitioner).
+-module (ta_partitioner).
 -compile(export_all).
 
 partition_find(_,[]) ->

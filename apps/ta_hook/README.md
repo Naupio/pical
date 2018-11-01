@@ -1,22 +1,10 @@
-# np_hook
+# ta_hook
 An simple hook system for Erlang
 
 # LICENSE
 - The [MIT License](./LICENSE)  
-- Copyright (c) 2017-2018 [Naupio Z.Y Huang](https://github.com/Naupio) 
 
-# Dependent
-
-use rebar3 create a new app's project.  
-deploy rebar.config.  
-```erlang
-{deps, 
-    [ 
-        {np_hook, {git, "https://github.com/Naupio/np_hook.git", {branch, "master"}}}
-    ]
-}.
 ```
-
 # Run
 - go into the project's src dir.  
 `cd path/to/project_root/src`
@@ -25,7 +13,7 @@ deploy rebar.config.
 ```erlang
 -module(simple_hook_test).
 
--include_lib("np_hook/include/np_hook.hrl").
+-include_lib("ta_hook/include/ta_hook.hrl").
 
 -export([foreach_main_test/0,fold_main_test/0]).
 
@@ -97,9 +85,9 @@ fold_main_test() ->
 - go into the project's root dir and use rebar3 compile to run it with repl.  
 `rebar3 shell`
 
-- start the np_hook application and run test case. 
+- start the ta_hook application and run test case. 
 ```erlang
-1> application:start(np_hook).
+1> application:start(ta_hook).
 2> simple_hook_test:foreach_main_test().
 3> simple_hook_test:fold_main_test().
 ```

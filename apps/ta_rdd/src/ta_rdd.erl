@@ -1,4 +1,4 @@
--module (dag_rdd).
+-module (ta_rdd).
 %-export().
 -compile(export_all). % Just for test, remember to delete it when the project release.
 

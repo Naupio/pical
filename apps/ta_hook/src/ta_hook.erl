@@ -1,11 +1,11 @@
--module(np_hook).
--include("np_hook.hrl").
+-module(ta_hook).
+-include("ta_hook.hrl").
 
 -behaviour(gen_server).
 
--record(np_hook_state,{}).
+-record(ta_hook_state,{}).
 
--define(DEFAULT_STATE, #np_hook_state{}). 
+-define(DEFAULT_STATE, #ta_hook_state{}). 
 % -define(DEFAULT_STATE, #{}). 
 
 -define(SERVER, ?MODULE).
@@ -132,14 +132,11 @@ safe_apply(Hook, Module, Function, Args) ->
         true ->
 		    apply(Module, Function, Args)
 	end
-    catch E:R when E /= exit; R /= normal ->
+    catch E:R:Stacktrace when E /= exit; R /= normal ->
 	    error_logger:msg("Hook ~p crashed when running ~p:~p/~p:~n"
 		       "** Reason = ~p~n"
 		       "** Arguments = ~p",
 		       [Hook, Module, Function, length(Args),
-			{E, R, get_stacktrace()}, Args]),
+			{E, R, Stacktrace}, Args]),
 	    'EXIT'
     end.
-
-get_stacktrace() ->
-    [{Mod, Fun, Loc, Args} || {Mod, Fun, Args, Loc} <- erlang:get_stacktrace()].

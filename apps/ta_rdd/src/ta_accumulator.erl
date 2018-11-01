@@ -1,4 +1,4 @@
--module (dag_accumulator).
+-module (ta_accumulator).
 -compile(export_all).
 
 num_acc() ->

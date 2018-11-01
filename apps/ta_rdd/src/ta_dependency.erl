@@ -1,4 +1,4 @@
--module(dag_dependency).
+-module(ta_dependency).
 -compile(export_all). % Just for test, remember to delete it when the project release.
 
 one_to_one_dependency(RDD) ->
