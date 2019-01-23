@@ -1,9 +1,9 @@
 %%%-------------------------------------------------------------------
-%% @doc piota top level supervisor.
+%% @doc pita top level supervisor.
 %% @end
 %%%-------------------------------------------------------------------
 
--module(piota_sup).
+-module(pita_sup).
 
 -behaviour(supervisor).
 

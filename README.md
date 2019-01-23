@@ -1,5 +1,5 @@
-# piota  
-(Work In Process) **piota** is a general distributed computation system with **Erlang** language base on DAG model. This project is inspired by [DouBan 's DPark](https://github.com/douban/dpark) and [Apache Spark](https://github.com/apache/spark).  
+# pita  
+(Work In Process) **pita** is a general distributed computation system with **Erlang** language base on DAG model. This project is inspired by [DouBan 's DPark](https://github.com/douban/dpark) and [Apache Spark](https://github.com/apache/spark).  
 
 # LICENSE
 - The [MIT License](./LICENSE)  

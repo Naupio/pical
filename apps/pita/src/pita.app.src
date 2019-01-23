@@ -1,8 +1,8 @@
-{application, piota,
+{application, pita,
  [{description, "An OTP application"},
   {vsn, "0.1.0"},
   {registered, []},
-  {mod, { piota_app, []}},
+  {mod, { pita_app, []}},
   {applications,
    [kernel,
     stdlib
