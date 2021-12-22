@@ -1,9 +1,10 @@
-# pita  
-(Work In Process) **pita** is a general distributed computation system with **Erlang** language base on DAG model. This project is inspired by [DouBan 's DPark](https://github.com/douban/dpark) and [Apache Spark](https://github.com/apache/spark).  
+# PiCal
+
+(Work In Process) **PiCal** is a general distributed computation system with **Elixir** language base on DAG model. This project is inspired by [DouBan 's DPark](https://github.com/douban/dpark) and [Apache Spark](https://github.com/apache/spark).  
 
 # LICENSE
 - The [MIT License](./LICENSE)  
-- Copyright (c) 2016-2018 [Naupio Z.Y Huang](https://github.com/Naupio)  
+- Copyright (c) 2016-2022 [Naupio Z.Y Huang](https://github.com/Naupio)  
 
 # WARNING
 This project is **not finish** (yet).
